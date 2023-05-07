@@ -5,12 +5,12 @@ terraform {
       version = "4.62.0"
     }
   }
-}
 
-backend "s3" {
+  backend "s3" {
         bucket = "tbd-c40"
         key = "keys/terraform.tfstate"
         region = "us-east-1"
+}
 }
 
 
